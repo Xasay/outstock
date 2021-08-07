@@ -1,0 +1,194 @@
+@import url('../css/fonts.css');
+@import url('./reset.css');
+
+*{
+    font-family: 'Poppins';
+
+}
+
+body{
+    
+    float: left;
+       
+}
+
+
+:root{
+    --gold : #BC8246;
+    --black:#333e48;
+}
+
+/*******************/
+.signin_container{
+    padding: 19px;
+}
+
+.signin_head{
+    margin-bottom: 30px;
+    padding: 0px 15px;
+}
+
+
+.signin_head > ul{
+    padding: 0%;
+    width: 100%;
+    display: flex;
+}
+
+.signin_head ul li:first-child{
+    color: grey;
+    font-size: 15px;
+}
+
+.signin_head ul li:first-child > a {
+    color: var(--black);
+    font-size: 12px;
+}
+
+.signin_head ul li:first-child > a:hover{
+    color: var(--gold);
+}
+
+.signin_head ul li:not(:first-child){
+    margin-left: 5px;
+}
+
+
+.signin_head ul li:not(:first-child) a{
+    font-size: 12px;
+    color:#c7c3c3 ;
+
+}
+
+.signin_head ul li:not(:first-child) a:hover  {
+    color:#333e48 ;
+    
+}
+
+.signin_left{
+    width: 50%;
+    padding: 0px 15px;
+}
+
+#outstock_signin{
+    padding: 16px 32px 24px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
+.form_head>h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.signin_button{
+    padding: 12px 30px;
+    background-color: #454545;
+    border-radius: 2px;
+    color: white;
+    font-size: 13px;
+}
+
+.signin_button:hover{
+    opacity: .8;
+}
+
+/******************/
+.signin_right{
+    width: 50%;
+    height: 362px;
+    padding: 0px 15px;
+}
+
+.right_in{
+    padding: 16px 32px 24px;
+    height: 342px;
+    background-color: #F2F2F2;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 4px;
+}
+
+.right_in div h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.right_text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.right_list li{
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: disc;
+    color: #666;
+}
+
+
+.create_btn{
+    background-color:#454545 ;
+    padding: 12px 30px;
+    border-radius: 2px;
+}
+.create_btn a {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.side_bar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2000;
+    transform: translateX(-100%);
+    transition: all .2s linear;
+    display: none;
+}
+
+.side_bar.show{
+    display: block;
+}
+
+.aside_bottom{
+    padding: 0px 15px;
+    background-color: white;
+    height: 100%;
+    width: 320px;
+}

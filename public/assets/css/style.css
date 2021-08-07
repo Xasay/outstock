@@ -1,0 +1,820 @@
+@import url('../css/fonts.css');
+@import url('./reset.css');
+
+@import url('./blog.css');
+@import url('./shop.css');
+@import url('./register.css');
+@import url('./signin.css');
+
+
+
+*{
+    font-family: 'Poppins';
+   
+}
+
+body{
+    float: left;
+    
+    
+}
+.main{
+    width: 100%;
+    position: relative;
+}
+
+:root{
+    --white-color:#FFF;
+}
+
+/* Slider section*/
+
+
+
+
+.slider_text_container{
+    width: 80%;
+    height: 90%;
+    margin: 0% auto;
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+
+}
+
+.slider_text{
+    position: absolute;
+    top: 28%;
+    width: 53%;
+    background-color: transparent;
+
+}
+
+
+.slider_text h2{
+    color: var(--white-color);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+.slider_caption h3{
+    font-size: 15px;
+    color: var(--white-color);
+    margin-bottom: 3.5rem;
+}
+
+.slider_button {
+    padding: 20px 35px;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid grey;
+    background-color: transparent;
+    color: var(--white-color);
+}
+.slider_button a{
+    
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--white-color);
+}
+
+.slider_button:hover{
+    border-color: #bd8448;
+    
+}
+
+.slider_button:hover a {
+    
+    color: #bd8448;
+}
+
+.carousel-control-next{
+    justify-content:flex-end;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    opacity: 0;
+    transition: transform 0.5s ,opacity 0.3s linear;
+}
+
+.slider:hover  .carousel-control-prev-icon{
+    transform: translateX(160%);
+    opacity: 1;
+}
+.slider:hover .carousel-control-next-icon{
+    transform: translateX(-180%);
+    opacity: 1;
+}
+/* ***********Three boks hissesi************/
+.main_body{
+    background-color: #F5F5F5;
+    position: relative;
+    margin-bottom: -190px;
+}
+
+.my_container{
+    width: 1200px;
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin: 0% auto !important;
+    position: relative;
+    z-index: 500;
+    background-color: white;
+    transform: translateY(-3%);
+}
+
+.three_boks_container{
+    background-color: white;
+}
+
+
+.three_boks{
+    padding: 10px;
+}
+
+.boks{
+    width: calc(100% / 3.16);
+    /* width: 360px; */
+    height: 240px;
+    /* margin: 0 15px; */
+    background-color: #F5F5F5;
+    overflow: hidden;
+    
+}
+
+
+.boks a img{
+    transition: transform .15s linear;
+    width: 100%;
+    height: auto;
+   
+}
+
+.boks>a:hover img{
+    transform: scale3d(1.1,1.1,1);
+}
+
+/*****Newest Product********/
+
+
+.newest_title {
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    margin: 20px 0px 40px;
+}
+
+
+.newest_title::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    border-top: 2px solid #ebebeb;
+    width: 100%;
+    height: 3px;
+    top: 47%;
+    z-index: 1;
+}
+
+.newest_title :first-child{
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 36px;
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+
+
+.newest_product:last-child{
+    color: #606060;
+    font-size: 14px !important ;
+    font-weight: 400;
+
+}
+
+.news_product_items{
+    margin: 0% auto;
+    justify-content: space-between;
+}
+
+/***************/
+
+.news_product_items_left{
+    /* margin: 5px; */
+    width: 48%;
+    margin: 0 8px;
+
+}
+
+.news_product_items_left_in{
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.news_product_items_right  {
+    /* margin: 5px; */
+    width: 48%;
+    margin: 0 8px;
+
+}
+/*****************************/
+.little_product{
+    width: 272px;
+    height: 460px;
+   
+    position: relative;
+    
+   
+}
+
+.little_image_container{
+    
+    position: relative;
+    width: 100%;
+    height: 75%;
+}
+/***********iware qoymaq ucun olan flag**************/
+.new_flag{
+    
+    color: white;
+    z-index: 5;
+    background-color:#BC8246 ;
+    writing-mode: vertical-lr;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 30px;
+    transform: translateX(80%);
+    position: absolute;
+    font-size: 12px;
+}
+
+.new_flag::before{
+    content: '';
+    display: block;
+    border-width: 9px 8px ;
+    border-color:  #BC8246 transparent transparent #BC8246 ;
+    border-style: solid;
+    top: 98%;
+    left: 0%;
+    position:absolute;
+
+}
+
+.new_flag::after{
+    
+    content: '';
+    display: block;
+    border-width: 9px 8px ;
+    border-color:  #BC8246 #BC8246 transparent transparent ;
+    border-style: solid;
+    top: 98%;
+    right: 0%;
+    position:absolute;
+
+}
+
+.second_new_flag{
+    
+    color: white;
+    z-index: 4;
+    background-color:#535353 ;
+    writing-mode: vertical-lr;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 30px;
+    transform: translateX(80%) translateY(100%) ;
+    position: absolute;
+    font-size: 12px;
+}
+
+.second_new_flag::before{
+    content: '';
+    display: block;
+    border-width: 9px 8px ;
+    border-color:  #535353 transparent transparent #535353 ;
+    border-style: solid;
+    top: 98%;
+    left: 0%;
+    position:absolute;
+
+}
+
+.second_new_flag::after{
+    
+    content: '';
+    display: block;
+    border-width: 9px 8px ;
+    border-color:  #535353 #535353 transparent transparent ;
+    border-style: solid;
+    top: 98%;
+    right: 0%;
+    position:absolute;
+
+}
+
+
+
+
+
+
+/******************************/
+.little_img_link{
+    display: block;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.little_img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ z-index: 1;
+}
+
+.little_hover_img{
+    position: absolute ;
+    display: none;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1  ;
+    
+}
+
+.little_hover_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* umumi balaca divin ustune gelen kimi  */
+.little_product:hover  .little_hover_img{
+    display: block;
+}
+
+
+
+.card_button_info{
+   
+    background-color: white;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 100;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .12);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 15px;
+    width: 43px;
+    height: 124px;
+    z-index: 10 ;
+    visibility: hidden;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all .2s linear ;
+}
+
+.little_product:hover .card_button_info{
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+}
+
+.card_button_info a{
+    color: #666666;
+}
+.card_button_info li {
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+.card_button_info li:nth-child(1)::before{
+    content: 'Quick view';
+    position: absolute;
+    top: 0%;
+    transform: translateY(-105%) translateX(-44%)  ;
+    font-size: 12px;
+    text-align: center;
+    width: 115px;
+    display: none;
+    padding: 8px  25px;
+    border-radius: 4px;
+    background-color: #2D2D2D;
+    color: white;
+
+}
+.card_button_info li:nth-child(1)::after{
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-13%) translateX(-6%)  ;
+    border: 8px  solid ;
+    border-color:  black transparent transparent transparent;
+}
+
+
+.card_button_info li:nth-child(2)::before{
+    content: 'Compare';
+    position: absolute;
+    top: 0%;
+    transform: translateY(-105%) translateX(-44%)  ;
+    font-size: 12px;
+    text-align: center;
+    width: 115px;
+    display: none;
+    padding: 8px  25px;
+    border-radius: 4px;
+    background-color: #2D2D2D;
+    color: white;
+
+}
+.card_button_info li:nth-child(2)::after{
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-13%) translateX(-6%)  ;
+    border: 8px  solid ;
+    border-color:  black transparent transparent transparent;
+}
+
+
+.card_button_info li:nth-child(3)::before{
+    content: 'Add to wish list';
+    position: absolute;
+    top: 0%;
+    transform: translateY(-105%) translateX(-44%)  ;
+    font-size: 12px;
+    text-align: center;
+    width: 145px;
+    display: none;
+    padding: 8px  25px;
+    border-radius: 4px;
+    background-color: #2D2D2D;
+    color: white;
+
+}
+.card_button_info li:nth-child(3)::after{
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-13%) translateX(-6%)  ;
+    border: 8px  solid ;
+    border-color:  black transparent transparent transparent;
+}
+
+
+
+
+.card_button_info li:hover::before{
+    display: block;
+}
+
+.card_button_info li:hover::after{
+    display: block;
+}
+
+.card_button_info li:hover{
+    color: #E0A453;
+}
+.card_button_info li:hover a {
+    color: #E0A453;
+}
+
+
+.card_button_info li:not(:last-child){
+    border-bottom: 1px solid #EBEBEB;
+}
+
+
+/**/
+.little_card{
+    
+   
+    color: white;
+    width: 100%;
+    height: 25%;
+}
+
+
+.little_card div {
+    width: 100%;
+    padding: 5px 0px;
+    color: #a5a5a5;
+    margin-top: 5px;
+}
+
+.little_card div:nth-child(1){
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.little_card div:nth-child(2){
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.little_card div:not(:nth-child(2)):hover{
+    color: #E0A453;
+    cursor: pointer;
+}
+
+.little_card div:nth-child(3){
+    transition: all .1s linear;
+    color: black;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.little_product:hover .little_card div:nth-child(3){
+    transform: rotateX(90deg);
+}
+
+.little_card  div:last-child{
+    /* display: none; */
+    position: absolute;
+    transition: all .2s linear;
+    top: 90%;
+    opacity: 0;
+    border-bottom: 1px solid grey;
+    width: 41%;
+}
+
+.little_card  div:last-child a{
+    color: black;
+}
+
+.little_card  div:last-child a:hover{
+    color: #E0A453;
+}
+
+.little_product:hover .little_card  div:last-child{
+    top: 89%;
+    opacity: 1;
+    
+}
+
+.old_price{
+    color: #a1a1a1;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/**************************************/
+
+
+
+
+
+.big_product{
+    width: 100%;
+    height: 557px;
+    overflow: hidden;
+    margin-bottom: 14px;
+   
+}
+
+.big_product a img {
+    transition: transform .3s linear;
+}
+
+.big_product:hover a img{
+    transform: scale3d(1.1,1.1,1);
+}
+
+/**************Newest bottom******/
+.newest_product_bottom{
+   
+    margin-top: 10px;
+    padding: 7px;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+
+
+.newest_bottom_child{
+    width: 49.1%;
+    height: 267px;
+    margin: 0 -2px;
+    overflow: hidden;
+}
+
+.newest_bottom_child a img {
+    transition: transform .3s linear;
+}
+
+
+.newest_bottom_child:hover a img{
+    transform: scale3d(1.1,1.1,1);
+}
+
+/*******************Best Selling****************************/
+
+.best_selling_blocks{
+    /* overflow:auto; */
+    /* clear: both;
+    display: table;
+    height: auto; */
+    /* display: flex; */
+    width: 100%;
+    
+}
+
+.best_product_list {
+    flex-wrap: wrap;
+}
+
+.best_product{
+    margin: 5px 9px  ;
+}
+
+/**********************/
+
+.blog_container{
+    overflow-x: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.blog_container::-webkit-scrollbar {
+    width: 0px;
+   
+   
+    
+}
+.blog_container::-webkit-scrollbar-track{
+    margin: 10px 0 10px 0;
+}
+
+.blog_container::-webkit-scrollbar-thumb{
+    background-color: #faddb7;
+    
+    width: 0px;
+    border-radius: 20px;
+  
+}
+
+.blog_container::-webkit-scrollbar-button{
+    width: 210px;
+    border-radius: 20px;
+    height: 2px;
+    
+}
+
+
+
+
+
+
+.blog_item{
+    min-width: 366px  !important ;
+    height: 450px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+   
+}
+
+.blog_image{
+    overflow: hidden;
+}
+
+.blog_item:hover .blog_image img{
+    transform: scale3d(1.01,1.01,1.01);
+}
+
+
+
+.blog_cart div{
+     margin-bottom: 10px;
+     margin-top: 10px;
+}
+
+.blog_title{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+
+    
+}
+
+.blog_title a{
+    color: black;
+}
+
+.blog_title:hover a{
+    color: #BD8448;
+}
+
+
+.blog_date{
+    font-size: 12px;
+    color: #666;
+}
+
+.blog_date span:first-child{
+    color: #BD8448;
+}
+
+
+.blog_article{
+    color: #666;
+}
+
+.blog_button{
+    padding: 13px  35px;
+    min-width: 190px;
+    border:2px solid rgb(187, 187, 187);
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+.blog_button:hover{
+    border-color:#BD8448 ;
+}
+
+.blog_button a{
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+   
+}
+
+
+.blog_button:hover a{
+    color: #BD8448;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.side_bar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2000;
+    transform: translateX(-100%);
+    transition: all .2s linear;
+    display: none;
+}
+
+.side_bar.show{
+    display: block;
+}
+
+.aside_bottom{
+    padding: 0px 15px;
+    background-color: white;
+    height: 100%;
+    width: 320px;
+}
